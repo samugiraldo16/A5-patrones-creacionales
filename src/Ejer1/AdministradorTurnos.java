@@ -26,7 +26,5 @@ public final class AdministradorTurnos {
         return turnoActual;
     }
 
-    public int getTurnoActual() {
-        return turnoActual;
-    }
+
 }

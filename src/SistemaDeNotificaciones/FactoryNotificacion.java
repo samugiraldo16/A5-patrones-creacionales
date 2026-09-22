@@ -1,0 +1,16 @@
+package SistemaDeNotificaciones;
+
+/**
+ * Creador de las notificaciones
+ */
+public abstract class FactoryNotificacion {
+
+    public abstract Notificacion crearNotificacion();
+
+    public void enviarNotificacion(String destinatario, String mensaje) {
+
+        Notificacion notificacion = crearNotificacion();
+
+        notificacion.enviar(destinatario, mensaje);
+    }
+}
